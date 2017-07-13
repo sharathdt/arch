@@ -2,7 +2,6 @@ body {
     font-size: $base-font-size;
     line-height: $base-line-height;
     color: $text-color;
-    background-image: url(/img/natural-paper.png);
     text-rendering: optimizeLegibility;
     font-weight: $base-font-weight;
 
@@ -11,6 +10,7 @@ body {
 
 h1,h2,h3,h4,h5,h6 {
     font-family: $head-font-family;
+    line-height: 1.5;
     font-weight: bold;
     color: #151515;
 }
@@ -25,6 +25,9 @@ h1 {
 
 h2 {
     font-size: $base-font-size * 2;
+    @include media-query($on-palm) {
+                font-size: $base-font-size * 1.5;
+        }
 }
 
 p {
@@ -120,4 +123,7 @@ ul.nav.navbar-nav {
 
 .page-title {
     font-size: $base-font-size * 2.25;
+    @include media-query($on-palm) {
+                font-size: $base-font-size * 1.85;
+        }
 }
