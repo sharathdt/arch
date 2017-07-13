@@ -9,6 +9,8 @@ One afternoon, a fox was walking through the forest and spotted a bunch of grape
 
 Taking a few steps back, the fox jumped and just missed the hanging grapes. Again, the fox took a few paces back and tried to reach them, but still failed.
 
+![sample post]({{site.baseurl}}/images/image-2.jpg)
+
 Short StoriesFinally, giving up, the fox turned up his nose and said, "They're probably sour anyway." Then he walked away.
 
 A note about the story
