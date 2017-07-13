@@ -1,0 +1,123 @@
+body {
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    color: $text-color;
+    background-image: url(/img/natural-paper.png);
+    text-rendering: optimizeLegibility;
+    font-weight: $base-font-weight;
+
+}
+
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $head-font-family;
+    font-weight: bold;
+    color: #151515;
+}
+
+h1 {
+    font-size: $base-font-size * 3;
+        @include media-query($on-palm) {
+                font-size: $base-font-size * 2;
+        }
+}
+
+
+h2 {
+    font-size: $base-font-size * 2;
+}
+
+p {
+    margin: 0 0 30px;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+header {
+    background: #000;
+    text-align: center;
+    a {
+        text-decoration: none;
+        color: #fff;
+        -webkit-transition: all 500ms ease-out 100ms;
+        -moz-transition: all 500ms ease-out 100ms;
+        -o-transition: all 500ms ease-out 100ms;
+        transition: all 500ms ease-out 100ms;
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+/*             color: $brand-color; */
+            color: #fff;
+             text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+
+            
+            
+        }
+    }
+}
+
+.site-title {
+    font-family: 'Allura', cursive;
+/*  text-transform: uppercase; */
+    margin: 0;
+    padding: 40px;
+    font-size: 140px;
+    font-weight: 300;
+    color: #fff;
+    @include media-query($on-palm) {
+        font-size: 50px;
+        padding: 20px;
+    }
+}
+
+.page {
+    padding-bottom: 50px;        
+    padding-top: 20px;        
+}
+
+body {
+    overflow-x: hidden;
+}
+
+footer {
+    background: #000;
+    color: #eee;
+    padding: 60px 20px;
+}
+
+ul.nav.navbar-nav {
+    font-weight: 300;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #ddd;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.card {
+    border: 4px solid #eee;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+
+
+.page-title {
+    font-size: $base-font-size * 2.25;
+}
